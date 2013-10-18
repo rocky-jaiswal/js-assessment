@@ -23,11 +23,15 @@ define(function() {
     },
 
     useArguments : function() {
-
+        var sum = 0;
+        var len = arguments.length;
+        for(var i = 0; i < len; i++)
+            sum = sum + arguments[i];
+        return sum;
     },
 
     callIt : function(fn) {
-
+        
     },
 
     curryIt : function(fn) {
